@@ -1,0 +1,652 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Animasi Hamburger */
+.hamburger span {
+    display: block;
+    width: 30px; /* Lebar garis hamburger */
+    height: 3px; /* Tinggi garis hamburger */
+    background-color: #333; /* Warna garis hamburger */
+    margin: 6px auto; /* Jarak antar garis hamburger */
+    transition: 0.4s; /* Durasi animasi */
+  }
+  
+  /* Saat tombol hamburger diklik */
+  .hamburger.navbar-toggler-icon.active span:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  
+  .hamburger.navbar-toggler-icon.active span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger.navbar-toggler-icon.active span:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+  
+
+.header {
+    background-color: rgb(236, 235, 252);
+}
+
+.header .navbar-brand {
+    font-size: 26px;
+}
+
+.header .navbar-nav a {
+    color:rgb(0, 0, 0);
+    font-size: 16px;
+    margin-inline: 10px;
+}
+
+.header .navbar-nav a:hover{
+    color:deeppink
+}
+
+.header .row {
+    min-height: 85vh;
+}
+
+.header .row .col:nth-child(1) h1 {
+    font-size: 70px;
+    color:#30240f;
+    --animate-delay: 3.4s;
+}
+
+.header .row .col:nth-child(1) > p {
+    font-size: 14px;
+    padding-right: 70px;
+    --animate-delay: 3.8s;
+}
+
+.header .row .col:nth-child(1) button{
+    --animate-delay: 4.2s;
+}
+
+.header .row .col:nth-child(1) div {
+    --animate-delay: 4.6s;
+}
+
+.header .row .col:nth-child(1) div i {
+    color: #dc3545;
+}
+
+.header .row .col:nth-child(1) div p {
+    font-size: 14px;
+}
+
+.header .row .col:nth-child(2) img:nth-child(1) {
+    width: 550px;
+    z-index: 2;
+}
+
+.header .row .col:nth-child(2) img:nth-child(2) {
+    width: 450px;
+    z-index: 1;
+}
+
+.header .row .col:nth-child(2) img:nth-child(3) {
+    width: 110px;
+    z-index: 3;
+    top: 40%;
+    right: -70px;
+    transform: translateY(-100%);
+    -webkit-transform: translate(-100%);
+    -moz-transform: translate(-100%);
+    -ms-transform: translate(-100%);
+    -o-transform: translate(-100%);
+}
+
+.header .row .col:nth-child(2) img:nth-child(4) {
+    width: 150px;
+    z-index: 4;
+    top: 70%;
+    left: 20px;
+}
+
+.img-zoom {
+    transition: transform 0.3s ease; /* Animasi transformasi selama 0.3 detik dengan efek yang halus */
+}
+
+.img-zoom:hover {
+    transform: scale(1.1); /* Memperbesar gambar menjadi 110% ukuran aslinya saat kursor mengarah */
+}
+
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+.column {
+    flex: 1;
+    margin-right: 10px; /* Jarak antara kolom */
+  }
+  
+
+.image-gallery img {
+    max-width: 100%; /* Atur lebar maksimum gambar menjadi 100% dari container */
+    height: auto; /* Atur tinggi gambar agar mengikuti perubahan lebar */
+    margin-bottom: 10px; /* Jarak antara gambar */
+  }
+  
+/* Mengatur tinggi offcanvas menjadi setengah dari layar */
+.offcanvas-bottom {
+    height: 50%;
+    max-height: 50%;
+    transform: translateY(50%);
+  }
+  
+/* Mengatur konten offcanvas agar dapat di-scroll jika diperlukan */
+.offcanvas-body {
+    overflow-y: auto;
+  }
+  
+/* Mengatur lebar offcanvas */
+.offcanvas.show {
+    width: 100%; /* Anda dapat menyesuaikan lebar sesuai kebutuhan */
+    max-width: 100%; /* Maksimalkan lebar sesuai kebutuhan */
+    right: 0; /* Anda dapat mengatur posisi offcanvas di sisi kanan atau kiri sesuai keinginan */
+  }
+
+.offcanvas.show {
+    height: 70%; /* Anda dapat menyesuaikan lebar sesuai kebutuhan */
+    max-width: 100%; /* Maksimalkan lebar sesuai kebutuhan */
+    right: 0; /* Anda dapat mengatur posisi offcanvas di sisi kanan atau kiri sesuai keinginan */
+  }
+  
+  .profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .profile-container img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .profile-info {
+    margin-left: 20px; /* Jarak antara foto dan informasi */
+  }
+  
+  /* Sesuaikan style lainnya sesuai kebutuhan Anda */
+  
+
+.skills {
+    min-height: 60vh;
+}
+
+.skills .container > h1 {
+    color:hsl(346, 87%, 42%);
+}
+
+.skills .row .col p {
+    font-sixe: 12px;
+}
+
+.skills .row .col i {
+    color: darkslateblue;
+    font-size: 46px;
+    margin-bottom: 20px;
+}
+
+.daftar .box-daftar h1 {
+    font-weight: bold;
+  }
+
+.daftar {
+    padding: 50px 0 100px 0;
+  }
+  
+.daftar .box-daftar {
+    color: hsl(346, 87%, 42%);;
+    text-align: center;
+  }
+  
+.daftar .box-daftar h1 {
+    margin-bottom: 20px;
+  }
+  
+.daftar .box-daftar h3 {
+    font-weight: 400;
+    margin-bottom: -90px;
+    animation: animasi;
+    -webkit-animation: animasi 2s infinite;
+  }
+  
+  @keyframes animasi {
+    0% {
+      transform: scale(1);
+      -webkit-transform: scale(1);
+      -moz-transform: scale(1);
+      -ms-transform: scale(1);
+      -o-transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+      -webkit-transform: scale(1.05);
+      -moz-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+      -o-transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+      -webkit-transform: scale(1);
+      -moz-transform: scale(1);
+      -ms-transform: scale(1);
+      -o-transform: scale(1);
+    }
+  }
+  
+  .daftar .box-daftar button {
+    border: none;
+    min-width: 100px;
+    min-height: 40px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    cursor: pointer;
+    background-color: #0050b3;
+    color: white;
+    padding-inline: 10px;
+  }
+  
+  .daftar .box-daftar button i {
+    font-size: 16px;
+    font-weight: bold;
+    margin-inline: 5px;
+  }
+
+  .pantai .box-pantai {
+    max-width: 100%;
+    height: auto;
+  }
+  
+ .pantai {
+    padding: 50px 0 50px 0;
+  }
+  
+  .pantai .box-pantai {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    row-gap: 50px;
+  }
+  
+  .pantai .box-pantai .box {
+    text-align: center;
+    color: white;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+  }
+  
+  .pantai .box-pantai .box:hover {
+    transform: translateY(-20px);
+    -webkit-transform: translateY(-20px);
+    -moz-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    -o-transform: translateY(-20px);
+  }
+  
+  .pantai .box-pantai .box img {
+    width: 100%;
+    height: auto;
+    margin-bottom: -50px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  }
+  
+  .pantai .box-pantai .box p {
+    font-weight: 100;
+    margin-bottom: 5px;
+  }
+  
+  .pantai .box-pantai .box button {
+    width: 120px;
+    height: 40px;
+    border: none;
+    background-color: #156fdd;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .pantai .box-pantai .box button:hover {
+    background-color: #053e83;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+  }
+  
+
+
+.about .row {
+    background-color: rgba(197, 241, 249, 0.33);
+}
+
+.about .row {
+    min-height: 70vh;
+}
+
+.about .row .col img:nth-child(1) {
+    position: relative;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    z-index: 2;
+    width: 630px;
+}
+
+.about .row .col:nth-child(2) h1 {
+    color: hsl(346, 87%, 42%);
+    margin-top: -50px;
+}
+
+.about .row .col img:nth-child(2) {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    z-index: 1;
+    width: 450px;
+}
+
+.about .row .col .desc {
+    text-align: justify;
+}
+
+.about .row .col .brands-icon i {
+    font-size: 30px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+
+.about .row .col .brands-icon .a i:nth-child(1) {
+    color: #dc3545;
+}
+
+.about .row .col .brands-icon .a i:nth-child(2) {
+    color: #1260fe;
+}
+
+.about .row .col .brands-icon i:nth-child(3) {
+    color: #ffffff;
+}
+
+.about .row .col .brands-icon i:nth-child(4) {
+    color: #676767;
+}
+
+.about .row .col p {
+    font-size: 15px;
+}
+
+.projects {
+    padding-top: 80px;
+    padding-bottom: 100px;
+    padding-inline: 10px;
+}
+
+.projects h1 {
+   color:hsl(346, 87%, 42%); 
+}
+
+.services {
+    padding-bottom: 80px;
+}
+
+.services h1 {
+    color: hsl(346, 87%, 42%);    
+}
+
+.services h5 {
+    text-align: center;   
+}
+
+.services .row .col p {
+    text-align: center;
+}
+
+.container-loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.container-loader .spinner-grow {
+    width: 50px;
+    height: 50px;
+}
+
+.container-loader.loader-active{
+    display: none;
+}
+
+.services .row {
+    background-color: rgba(197, 241, 249, 0.33); 
+    min-height: 28vh;
+    display: flex;
+    align-items: top;
+    justify-content: center;  
+    padding: 2rem;
+}
+
+.footer {
+    background-color: rgb(236, 235, 252);
+    min-height: 50vh;
+
+}
+
+.copyright {
+    background-color: rgb(236, 235, 252);
+}
+
+/* Tampilan tombol up ke atas */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+  }
+  
+  /* Tampilan tombol saat hover */
+  .back-to-top:hover {
+    color: #272727;
+  }
+  
+  /* Tampilan ikon */
+  .back-to-top i {
+    font-size: 32px;
+  }
+  
+
+@media screen and (max-width: 1200px) {
+    .header .row .col:nth-child(1) h1 {
+        font-size: 50px;
+    }
+
+    .header .row .col:nth-child(2) img:nth-child(1) {
+        width: 400px
+    }
+
+    .skills .row .col h5 {
+        font-size: 16px;
+    }
+
+    .about .row .col img:nth-child(1) {
+        width : 350px;
+    }
+
+    .about .row .col img:nth-child(2) {
+        width : 250px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .header .row .col:nth-child(2) img:nth-child(3) {
+        right: -90px;
+    }
+
+    .header .row .col:nth-child(2) img:nth-child(4) {
+        left: -10px;
+    }
+
+    .about .row {
+        min-height: 100vh;
+        padding-top: 20px;
+        padding-bottom: 50px;
+    }
+
+    .about .row .col:nth-child(1) {
+        margin-bottom: 40px;
+    }
+
+    .about .row .col:nth-child(2) .desc {
+        text-align: center;
+    }
+
+    .about .row .col img:nth-child(1) {
+        position: relative;
+        width: 300px;
+    }
+
+    .about .row .col img:nth-child(2) {       
+        width: 215px;
+    }
+
+    .about .row .col .brands-icon i {
+        margin-right: 0;
+        margin-inline: 10px;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .header .row .col:nth-child(2) img:nth-child(1) {
+        width: 350px;
+    }
+
+    .header .row .col:nth-child(2) img:nth-child(2) {
+        width: 350px;
+    }
+
+    .header .row .col:nth-child(2) img:nth-child(3) {
+        right: -40px;
+        top: 20%;
+        z-index: 1;
+    }
+
+    .header .row .col:nth-child(2) img:nth-child(4) {
+        left: 0;
+    }
+
+    .header .row .col img:nth-child(1) {
+        width: 250px;
+    }
+
+    .header .row .col img:nth-child(1) {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .header .row .col:nth-child(2) img:nth-child(3) {
+        display: none;
+    }
+
+    .header .row .col:nth-child(2) img:nth-child(4) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .header .row .col:nth-child(1) h1 {
+        font-size: 40px;
+    }
+    
+    .header .row .col:nth-child(1) > p {
+        font-size: 12px;
+    } 
+
+    .header .row .col:nth-child(1) div p {
+        font-size: 12px;
+    } 
+
+    .skills .row .col p {
+        padding: 0 50px 0 50px;
+    }
+
+    
+}
+
+@media screen and (max-width: 370px) {
+    .header .row .col:nth-child(1) h1 {
+        font-size: 30px;
+    }
+ 
+    .header .row .col:nth-child(2) img:nth-child(1) {
+        width: 250px;
+    } 
+
+    .header .row .col:nth-child(2) img:nth-child(2) {
+        width: 210px;
+    } 
+}
+
+.back-to-top {
+    font-size: 16px; /* Sesuaikan ukuran font sesuai kebutuhan Anda */
+    padding: 5px 10px; /* Sesuaikan padding sesuai kebutuhan Anda */
+}
+
+.back-to-top i {
+    font-size: 16px; /* Sesuaikan ukuran ikon sesuai kebutuhan Anda */
+}
+
+/* Mengatur tinggi offcanvas menjadi 70% dari layar di layar ponsel */
+@media screen and (max-width: 768px) {
+    .offcanvas-bottom {
+        height: 70%;
+        max-height: 70%;
+        transform: translateY(70%);
+    }
+}
+
+/* CSS untuk tampilan desktop */
+.video {
+    width: 25%; /* Lebar video tetap 25% dari lebar tampilan */
+    max-width: 100%; /* Maksimalkan lebar video agar sesuai dengan kontainer parentnya */
+    height: auto; /* Biarkan tinggi video disesuaikan agar aspek rasio tetap terjaga */
+}
